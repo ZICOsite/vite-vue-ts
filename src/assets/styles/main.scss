@@ -1,0 +1,40 @@
+@import "common.scss";
+
+.posts {
+    
+    &__cards {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+        gap: 30px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    
+    &__btn {
+        margin-top: auto;
+    }
+    
+    &__pagination {
+        
+        .is-active {
+            background: #626aef !important;
+        }
+        
+        .number:hover:not(.is-active) {
+            color: #626aef;
+        }
+    }
+}
+
+.comments {
+    &__cards {
+        margin-top: 30px;
+        height: 220px;
+        padding: 20px;
+    }
+}
